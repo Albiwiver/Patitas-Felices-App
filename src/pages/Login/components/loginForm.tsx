@@ -58,7 +58,7 @@ export const LoginForm: React.FC = () => {
           name="email"
           id="email"
           placeholder="Ingrese su email"
-          className="placeholder-primary/60 text-black outline-none"
+          className="placeholder-primary/60 text-black outline-none w-full"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
@@ -78,7 +78,7 @@ export const LoginForm: React.FC = () => {
           name="password"
           id="password"
           placeholder="Ingrese su contraseña"
-          className="placeholder-primary/60 text-black outline-none"
+          className="placeholder-primary/60 text-black outline-none w-full"
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
