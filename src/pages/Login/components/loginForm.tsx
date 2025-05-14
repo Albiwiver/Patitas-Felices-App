@@ -19,9 +19,9 @@ export const LoginForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const user = findUser(email, password);
+    const user = findUser(email);
 
-    if (user) {
+    if (user && user.password === password) {
       login({ name: user.name, email: user.email });
       navigate(AppRoutes.HOME);
     } else {
